@@ -1,4 +1,4 @@
-# Chapter 3. A whirlwind tour of JavaScript engines
+# Capítulo 3. Un recorrido por los motores de JavaScript
 
 Let's begin our immersion in the language by introducing the wonderful world of JavaScript engines.
 
@@ -458,5 +458,5 @@ Since ES6, JavaScript engines also implement a Microtask Queue. The Microtask Qu
 
 For simplifying asynchronous code flow ECMAScript 2015 brought us Promises. A Promise is an asynchronous object and is used to represent either the failure or the success of any asynchronous operation. But the improvements did not stop there. In 2017 `async/await` was born: it's a stylistic make up for Promises that makes possible to write asynchronous code as if it was synchronous. And more important makes possible to use `try/catch` for handling errors in asynchronous code.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMTE4MTA5Ml19
+eyJoaXN0b3J5IjpbMTg1OTAyNTMzNl19
 -->
