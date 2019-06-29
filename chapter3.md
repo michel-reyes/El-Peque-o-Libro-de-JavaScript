@@ -1,5 +1,6 @@
 # Capítulo 3. Un breve recorrido por los motores de JavaScript
 
+Comencemos nuestra inmersión en el lenguaje introduciendo el maravilloso mundo de los motores de JavaScript
 Let's begin our immersion in the language by introducing the wonderful world of JavaScript engines.
 
 Ever wondered how browsers read and run JavaScript code? It seems magic but you can get an hint of what's happening under the hood. Open up a browser console in Chrome and take a look at the Sources tab. You'll see some boxes, one of the more interesting named Call Stack (in Firefox you can see the Call Stack after inserting a breakpoint into the code):
@@ -458,5 +459,5 @@ Since ES6, JavaScript engines also implement a Microtask Queue. The Microtask Qu
 
 For simplifying asynchronous code flow ECMAScript 2015 brought us Promises. A Promise is an asynchronous object and is used to represent either the failure or the success of any asynchronous operation. But the improvements did not stop there. In 2017 `async/await` was born: it's a stylistic make up for Promises that makes possible to write asynchronous code as if it was synchronous. And more important makes possible to use `try/catch` for handling errors in asynchronous code.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk5MDIzMDgyOF19
+eyJoaXN0b3J5IjpbLTE4NjMzODgxNTZdfQ==
 -->
