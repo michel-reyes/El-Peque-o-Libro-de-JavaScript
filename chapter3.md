@@ -1,4 +1,4 @@
-﻿# Chapter 3. A whirlwind tour of JavaScript engines
+# Chapter 3. A whirlwind tour of JavaScript engines
 
 Let's begin our immersion in the language by introducing the wonderful world of JavaScript engines.
 
