@@ -51,7 +51,7 @@ Veamos cuáles son en la siguiente sección
 
 ## Contexto de Ejecución Global y Pila de Llamadas
 
-Haz aprendido cómo el motor de JavaScript lee las variables y las declaraciones de funciones, estas quedan almacenadas en una Memoria Global (el monticulo o *Heap*). Pero ahora ejecutamos una función de JavaScript y el motor tiene que ocuparse de ella. ¿Cómo? Hay un componente fundamental en cada motor de JavaScript, llamado Pila de Llamadas. La Pila de Llamadas o *Call Stack* es una estructura de datos de tipo pila: eso significa que los elementos pueden entrar desde la parte superior, pero no pueden salir si hay algún elemento por encima de ellos. Las funciones de JavaScript son exactamente así. Una vez que se ejecutan, no pueden abandonar la pila de llamadas si alguna otra función permanece bloqueada. Presta atención porque este concepto es útil para envolver su cabeza alrededor de la frase "JavaScript es de un solo hilo". Pero por ahora volvamos a nuestro ejemplo. Cuando se llama la función, el motor empuja esa función dentro de la pila de llamadas:
+Haz aprendido cómo el motor de JavaScript lee las variables y las declaraciones de funciones, estas quedan almacenadas en una Memoria Global (el monticulo o *Heap*). Pero ahora ejecutamos una función de JavaScript y el motor tiene que ocuparse de ella. ¿Cómo? Hay un componente fundamental en cada motor de JavaScript, llamado Pila de Llamadas. La Pila de Llamadas o *Call Stack* es una estructura de datos de tipo pila: eso significa que los elementos pueden entrar desde la parte superior, pero no pueden salir si hay algún elemento por encima de ellos. Las funciones de JavaScript son exactamente así. Una vez que se ejecutan, no pueden abandonar la pila de llamadas si alguna otra función permanece bloqueada. Este concepto es útil para entender la frase "JavaScript es de un solo hilo". Pero por ahora volvamos a nuestro ejemplo. Cuando se llama la función, el motor empuja esa función dentro de la pila de llamadas:
 You learned how the JavaScript engine reads variables and function declarations. They end up in a Global Memory (the Heap). But now we executed a JavaScript function and the engine has to take care of it. How? There is a fundamental component in every JavaScript engine, called Call Stack. The Call Stack is a stack data structure: that means elements can enter from the top but they can't leave if there's some element above them. JavaScript functions are exactly like that. Once executing they can't leave the Call Stack if some other function remains stuck. Pay attention because this concept is helpful for wrapping your head around the sentence "JavaScript is single-threaded". But for now let's get back to our example. When the function is called the engine pushes that function inside the call stack:
 
 ![Call Stack and Global Memory in a JavaScript engine](images/call-stack.png)
@@ -459,8 +459,8 @@ Since ES6, JavaScript engines also implement a Microtask Queue. The Microtask Qu
 
 For simplifying asynchronous code flow ECMAScript 2015 brought us Promises. A Promise is an asynchronous object and is used to represent either the failure or the success of any asynchronous operation. But the improvements did not stop there. In 2017 `async/await` was born: it's a stylistic make up for Promises that makes possible to write asynchronous code as if it was synchronous. And more important makes possible to use `try/catch` for handling errors in asynchronous code.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzMTQzNTYxNzMsMTYyNTA3MTQyMywtND
-Q0NTc2NzE2LDczNzA4MDI1NCw3NTI2NzYzMzIsNzk1NTM1NDMs
-LTU0ODg2NzcwNSwtNTk1OTUwMjkxLDk2NzU4NjkyMiwxODA4Nj
-M5OTc0LDEyMDk1MTI5XX0=
+eyJoaXN0b3J5IjpbLTYxOTQ2Nzk0OCwxNjI1MDcxNDIzLC00ND
+Q1NzY3MTYsNzM3MDgwMjU0LDc1MjY3NjMzMiw3OTU1MzU0Mywt
+NTQ4ODY3NzA1LC01OTU5NTAyOTEsOTY3NTg2OTIyLDE4MDg2Mz
+k5NzQsMTIwOTUxMjldfQ==
 -->
