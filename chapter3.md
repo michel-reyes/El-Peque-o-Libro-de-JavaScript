@@ -23,6 +23,7 @@ function pow(num) {
 ```
 
 If I were to ask you how does the above code is processed in the browser? What will you say? You might say "the browser reads the code" or "the browser executes the code". The reality is more nuanced than that. First, it's not the browser that reads that snippet of code. It's the engine. A JavaScript engine reads the code and as soon as it encounters the first line it puts a couple of references into the Global Memory.
+¿Si tuviera que preguntarte cómo se procesa el código anterior en el navegador? ¿Qué dirás? Podrías decir "el navegador lee el código" o "el navegador ejecuta el código". La realidad es más matizada que eso. Primero, no es el navegador el que lee ese fragmento de código. Es el motor. Un motor de JavaScript lee el código y, tan pronto como encuentra la primera línea, coloca un par de referencias en la memoria global.
 
 The Global Memory (also called Heap) is an area where the JavaScript engine saves variables and function declarations. Pay attention, the difference might sound trivial but function declarations in JavaScript are not the same as function invocations. A function declaration is just a description of what the function should accept and how it's going to be invoked. A function invocation on the other hand is the actual execution of a previously declared function.
 
@@ -458,6 +459,7 @@ Since ES6, JavaScript engines also implement a Microtask Queue. The Microtask Qu
 
 For simplifying asynchronous code flow ECMAScript 2015 brought us Promises. A Promise is an asynchronous object and is used to represent either the failure or the success of any asynchronous operation. But the improvements did not stop there. In 2017 `async/await` was born: it's a stylistic make up for Promises that makes possible to write asynchronous code as if it was synchronous. And more important makes possible to use `try/catch` for handling errors in asynchronous code.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU0ODg2NzcwNSwtNTk1OTUwMjkxLDk2Nz
-U4NjkyMiwxODA4NjM5OTc0LDEyMDk1MTI5XX0=
+eyJoaXN0b3J5IjpbMTQxMDg4ODMyOSwtNTQ4ODY3NzA1LC01OT
+U5NTAyOTEsOTY3NTg2OTIyLDE4MDg2Mzk5NzQsMTIwOTUxMjld
+fQ==
 -->
