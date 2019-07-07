@@ -42,14 +42,14 @@ function pow(num) {
 pow(num);
 
 ```
-¿Qué sucederá? Ahora las cosas se ponen interesantes. Cuando se llama una función, el motor de JavaScript deja espacio para dos cuadros más:
+Ahora las cosas se ponen interesantes. Cuando se llama una función, el motor de JavaScript deja espacio para dos cuadros más:
 
 - Un Contexto de Ejecución Global o *Global Execution Context*
 - Una Pila de Llamadas o *Call Stack*
 
 Veamos cuáles son en la siguiente sección
 
-## Global Execution Context and Call Stack
+## Contexto de Ejecución Global y Pila de Llamadas
 
 You learned how the JavaScript engine reads variables and function declarations. They end up in a Global Memory (the Heap). But now we executed a JavaScript function and the engine has to take care of it. How? There is a fundamental component in every JavaScript engine, called Call Stack. The Call Stack is a stack data structure: that means elements can enter from the top but they can't leave if there's some element above them. JavaScript functions are exactly like that. Once executing they can't leave the Call Stack if some other function remains stuck. Pay attention because this concept is helpful for wrapping your head around the sentence "JavaScript is single-threaded". But for now let's get back to our example. When the function is called the engine pushes that function inside the call stack:
 
@@ -458,8 +458,8 @@ Since ES6, JavaScript engines also implement a Microtask Queue. The Microtask Qu
 
 For simplifying asynchronous code flow ECMAScript 2015 brought us Promises. A Promise is an asynchronous object and is used to represent either the failure or the success of any asynchronous operation. But the improvements did not stop there. In 2017 `async/await` was born: it's a stylistic make up for Promises that makes possible to write asynchronous code as if it was synchronous. And more important makes possible to use `try/catch` for handling errors in asynchronous code.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwNDQ0NzUxNDMsLTQ0NDU3NjcxNiw3Mz
-cwODAyNTQsNzUyNjc2MzMyLDc5NTUzNTQzLC01NDg4Njc3MDUs
-LTU5NTk1MDI5MSw5Njc1ODY5MjIsMTgwODYzOTk3NCwxMjA5NT
-EyOV19
+eyJoaXN0b3J5IjpbMTYyNTA3MTQyMywtNDQ0NTc2NzE2LDczNz
+A4MDI1NCw3NTI2NzYzMzIsNzk1NTM1NDMsLTU0ODg2NzcwNSwt
+NTk1OTUwMjkxLDk2NzU4NjkyMiwxODA4NjM5OTc0LDEyMDk1MT
+I5XX0=
 -->
