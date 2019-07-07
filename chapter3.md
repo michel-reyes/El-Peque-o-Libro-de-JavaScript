@@ -10,6 +10,7 @@ Comencemos nuestra inmersión en el lenguaje introduciendo el maravilloso mundo 
 
 ## Motores de JavaScript y Memoria global
 
+Dije que JavaScript es a la vez un lenguaje compilado e interpretado. Lo creas o no, los motores de JavaScript en realidad compilan tu código en microsegundos antes de ejecutarlo. Eso suena mágico ¿verdad? La magia se llama JIT (compilación instantánea o *Just in time*). Es un gran tema por sí solo, otro libro no sería suficiente para describir cómo funciona JIT. Pero por ahora solo podemos saltear la teoría detrás de la compilación y enfocarnos en la fase de ejecución, lo cual es interesante.
 I said that JavaScript is both a compiled and an interpreted language at the same time. Believe it or not JavaScript engines actually compile your code mere microseconds before executing it. That sounds magic right? The magic is called JIT (Just in time compilation). It's a big topic on its own, another book would not be enough to describe how JIT works. But for now we can just skip the theory behind compilation and focus on the execution phase, which is nonetheless interesting.
 
 To start off consider the following code:
@@ -458,6 +459,6 @@ Since ES6, JavaScript engines also implement a Microtask Queue. The Microtask Qu
 
 For simplifying asynchronous code flow ECMAScript 2015 brought us Promises. A Promise is an asynchronous object and is used to represent either the failure or the success of any asynchronous operation. But the improvements did not stop there. In 2017 `async/await` was born: it's a stylistic make up for Promises that makes possible to write asynchronous code as if it was synchronous. And more important makes possible to use `try/catch` for handling errors in asynchronous code.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA5OTg1NzkxOCwtNTk1OTUwMjkxLDk2Nz
+eyJoaXN0b3J5IjpbMTE2ODI4MDY0NiwtNTk1OTUwMjkxLDk2Nz
 U4NjkyMiwxODA4NjM5OTc0LDEyMDk1MTI5XX0=
 -->
