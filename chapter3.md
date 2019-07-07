@@ -27,7 +27,6 @@ function pow(num) {
 La Memoria Global (también llamada Montículo o *Heap*) es un área donde el motor de JavaScript guarda variables y declaraciones de funciones. Preste atención, la diferencia puede sonar trivial, pero las declaraciones de funciones en JavaScript no son lo mismo que las invocaciones de funciones. Una declaración de función es solo una descripción de lo que la función debe aceptar y cómo se va a invocar. Por otra parte, una invocación de una función es la ejecución real de una función previamente declarada.
 
 Volviendo a nuestro ejemplo, cuando el motor lee el código anterior, la Memoria Global se llena con dos enlaces:
-So, back to our example, when the engine reads the above code the Global Memory is populated with two bindings:
 
 ![Global Memory in a JavaScript engine](images/global-memory.png)
 
@@ -460,7 +459,8 @@ Since ES6, JavaScript engines also implement a Microtask Queue. The Microtask Qu
 
 For simplifying asynchronous code flow ECMAScript 2015 brought us Promises. A Promise is an asynchronous object and is used to represent either the failure or the success of any asynchronous operation. But the improvements did not stop there. In 2017 `async/await` was born: it's a stylistic make up for Promises that makes possible to write asynchronous code as if it was synchronous. And more important makes possible to use `try/catch` for handling errors in asynchronous code.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ0NDU3NjcxNiw3MzcwODAyNTQsNzUyNj
-c2MzMyLDc5NTUzNTQzLC01NDg4Njc3MDUsLTU5NTk1MDI5MSw5
-Njc1ODY5MjIsMTgwODYzOTk3NCwxMjA5NTEyOV19
+eyJoaXN0b3J5IjpbOTkwMjc3MDc2LC00NDQ1NzY3MTYsNzM3MD
+gwMjU0LDc1MjY3NjMzMiw3OTU1MzU0MywtNTQ4ODY3NzA1LC01
+OTU5NTAyOTEsOTY3NTg2OTIyLDE4MDg2Mzk5NzQsMTIwOTUxMj
+ldfQ==
 -->
