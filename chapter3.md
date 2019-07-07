@@ -46,8 +46,8 @@ pow(num);
 
 What will happen? Now things get interesting. When a function is called the JavaScript engine makes room for two more boxes:
 
-- Un Contexto de Ejecución Global
-- una pila de llamadas
+- Un Contexto de Ejecución Global o *Global Execution Context*
+- Una Pila de Llamadas o *Call Stack*
 
 Let's see what they are in the next section.
 
@@ -460,7 +460,7 @@ Since ES6, JavaScript engines also implement a Microtask Queue. The Microtask Qu
 
 For simplifying asynchronous code flow ECMAScript 2015 brought us Promises. A Promise is an asynchronous object and is used to represent either the failure or the success of any asynchronous operation. But the improvements did not stop there. In 2017 `async/await` was born: it's a stylistic make up for Promises that makes possible to write asynchronous code as if it was synchronous. And more important makes possible to use `try/catch` for handling errors in asynchronous code.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc2NDQ0OTYwMiw3MzcwODAyNTQsNzUyNj
+eyJoaXN0b3J5IjpbLTQ0NDU3NjcxNiw3MzcwODAyNTQsNzUyNj
 c2MzMyLDc5NTUzNTQzLC01NDg4Njc3MDUsLTU5NTk1MDI5MSw5
 Njc1ODY5MjIsMTgwODYzOTk3NCwxMjA5NTEyOV19
 -->
