@@ -55,6 +55,7 @@ Haz aprendido cómo el motor de JavaScript lee las variables y las declaraciones
 
 ![Call Stack and Global Memory in a JavaScript engine](images/call-stack.png)
 
+Me gusta pensar en el Call Stack como un montón de Pringles. ¡No podemos comer una pica en el fondo de la pila sin antes comer todas las puntas en la parte superior! Por suerte nuestra función es sincrónica: es una simple multiplicación y se calcula rápidamente. Al mismo tiempo, el motor asigna también un contexto de ejecución global, que es el entorno global donde se ejecuta nuestro código JavaScript. Así es como se ve:
 I like thinking of the Call Stack as a pile of Pringles. We cannot eat a pringle at the bottom of the pile without first eating all the pringles at the top! Luckily our function is synchronous: it's a simple multiplication and it's calculated quickly. At the very same time the engine allocates also a Global Execution Context, which is the global environment where our JavaScript code runs. Here's how it looks like:
 
 ![Call Stack, Global Memory, and Global Execution Context in a JavaScript engine](images/global-execution-context.png)
@@ -458,8 +459,8 @@ Since ES6, JavaScript engines also implement a Microtask Queue. The Microtask Qu
 
 For simplifying asynchronous code flow ECMAScript 2015 brought us Promises. A Promise is an asynchronous object and is used to represent either the failure or the success of any asynchronous operation. But the improvements did not stop there. In 2017 `async/await` was born: it's a stylistic make up for Promises that makes possible to write asynchronous code as if it was synchronous. And more important makes possible to use `try/catch` for handling errors in asynchronous code.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwODI2Mjk4MjEsMTc3MTI4ODY3MiwxNj
-I1MDcxNDIzLC00NDQ1NzY3MTYsNzM3MDgwMjU0LDc1MjY3NjMz
-Miw3OTU1MzU0MywtNTQ4ODY3NzA1LC01OTU5NTAyOTEsOTY3NT
-g2OTIyLDE4MDg2Mzk5NzQsMTIwOTUxMjldfQ==
+eyJoaXN0b3J5IjpbMTU5Nzg0NzY5NSwxNzcxMjg4NjcyLDE2Mj
+UwNzE0MjMsLTQ0NDU3NjcxNiw3MzcwODAyNTQsNzUyNjc2MzMy
+LDc5NTUzNTQzLC01NDg4Njc3MDUsLTU5NTk1MDI5MSw5Njc1OD
+Y5MjIsMTgwODYzOTk3NCwxMjA5NTEyOV19
 -->
