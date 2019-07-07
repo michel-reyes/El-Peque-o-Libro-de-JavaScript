@@ -6,7 +6,7 @@ Comencemos nuestra inmersión en el lenguaje introduciendo el maravilloso mundo 
  
 ![Call Stack](images/console-call-stack.png)
  
-¿Qué es una Pila de llamadas o *Call Satck*? Parece que su, incluso para ejecutar un par de líneas de código. JavaScript, de hecho, no sale de la caja con cada navegador web. Hay un gran componente que compila e interpreta nuestro código de JavaScript: es el motor de JavaScript. Los motores de JavaScript más populares son V8, usado por Google Chrome y Node.js, SpiderMonkey para Firefox, y JavaScriptCore, usado por Safari / WebKit. Los motores de JavaScript de hoy son piezas brillantes de ingeniería y sería imposible cubrir cada una de sus facetas. Pero hay algunas piezas más pequeñas en cada motor que hacen el trabajo duro por nosotros. Uno de estos componentes es la pila de llamadas y, junto con la memoria global y el contexto de ejecución, hacen posible ejecutar nuestro código. Listo para conocerlos?
+¿Qué es una Pila de llamadas o *Call Satck*? Parece que suceden muchas cosas, incluso cuando se ejecutan un par de líneas de código. JavaScript, de hecho, no sale de la caja con cada navegador web. Hay un gran componente que compila e interpreta nuestro código de JavaScript: es el motor de JavaScript. Los motores de JavaScript más populares son V8, usado por Google Chrome y Node.js, SpiderMonkey para Firefox, y JavaScriptCore, usado por Safari / WebKit. Los motores de JavaScript de hoy son piezas brillantes de ingeniería y sería imposible cubrir cada una de sus facetas. Pero hay algunas piezas más pequeñas en cada motor que hacen el trabajo duro por nosotros. Uno de estos componentes es la pila de llamadas y, junto con la memoria global y el contexto de ejecución, hacen posible ejecutar nuestro código. Listo para conocerlos?
 What's a Call Stack? Looks like there is a lot of stuff going on, even for running a couple line of code. JavaScript in fact does not come out of the box with every web browser. There is a big component which compiles and interprets our JavaScript code: it's the JavaScript engine. The most popular JavaScript engines are V8, used by Google Chrome and Node.js, SpiderMonkey for Firefox, and JavaScriptCore, used by Safari/WebKit. JavaScript engines today are brilliant pieces of engineering and it would be impossible to cover every single facet of them. But there are some smaller pieces in every engine doing the hard work for us. One of these component is the Call Stack and alongside together with Global Memory and Execution Context make possible to run our code. Ready to meet them?
 
 ## JavaScript engines and Global Memory
@@ -459,6 +459,6 @@ Since ES6, JavaScript engines also implement a Microtask Queue. The Microtask Qu
 
 For simplifying asynchronous code flow ECMAScript 2015 brought us Promises. A Promise is an asynchronous object and is used to represent either the failure or the success of any asynchronous operation. But the improvements did not stop there. In 2017 `async/await` was born: it's a stylistic make up for Promises that makes possible to write asynchronous code as if it was synchronous. And more important makes possible to use `try/catch` for handling errors in asynchronous code.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY3Mjg1MDY5Miw5Njc1ODY5MjIsMTgwOD
+eyJoaXN0b3J5IjpbLTU5NTk1MDI5MSw5Njc1ODY5MjIsMTgwOD
 YzOTk3NCwxMjA5NTEyOV19
 -->
