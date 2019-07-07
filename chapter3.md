@@ -2,13 +2,13 @@
 
 Comencemos nuestra inmersión en el lenguaje introduciendo el maravilloso mundo de los motores o intérpretes de JavaScript.
 
-¿Alguna vez te has preguntado cómo los navegadores leen y ejecutan el código JavaScript? Parece mágico, pero puedes hacerte una idea de lo que ocurre tras bambalinas. Abra una consola del navegador en Chrome y echa un vistazo a la pestaña Fuentes. Verá algunos cuadros, uno de los más interesantes llamados Pila de llamadas o *Call Stack* (en Firefox puede ver la Pila de llamadas después de insertar un punto de interrupción en el código):
+¿Alguna vez te has preguntado cómo los navegadores leen y ejecutan el código JavaScript? Parece mágico, pero puedes hacerte una idea de lo que ocurre tras bambalinas. Abra una consola del navegador en Chrome y echa un vistazo a la pestaña Fuentes. Verá algunos cuadros, uno de los más interesantes llamados Pila de Llamadas o *Call Stack* (en Firefox puede ver la Pila de Llamadas después de insertar un punto de interrupción en el código):
  
 ![Call Stack](images/console-call-stack.png)
  
-¿Qué es una Pila de llamadas o *Call Satck*? Parece que suceden muchas cosas, incluso cuando se ejecutan un par de líneas de código. JavaScript, de hecho, no sale de la caja con cada navegador web. Hay un gran componente que compila e interpreta nuestro código de JavaScript: es el motor de JavaScript. Los motores de JavaScript más populares son V8, usado por Google Chrome y Node.js, SpiderMonkey para Firefox, y JavaScriptCore, usado por Safari / WebKit. Los motores de JavaScript de hoy son piezas brillantes de ingeniería y sería imposible cubrir cada una de sus aspectos. Pero hay algunas piezas más pequeñas en cada motor que hacen el trabajo duro por nosotros. Uno de estos componentes es la Pila de llamadas y, junto con la Memoria global o *Global Memory* y el Contexto de ejecución o *Exuction Context*, hacen posible ejecutar nuestro código. Listo para conocerlos?
+¿Qué es una Pila de Llamadas o *Call Satck*? Parece que suceden muchas cosas, incluso cuando se ejecutan un par de líneas de código. JavaScript, de hecho, no sale de la caja con cada navegador web. Hay un gran componente que compila e interpreta nuestro código de JavaScript: es el motor de JavaScript. Los motores de JavaScript más populares son V8, usado por Google Chrome y Node.js, SpiderMonkey para Firefox, y JavaScriptCore, usado por Safari / WebKit. Los motores de JavaScript de hoy son piezas brillantes de ingeniería y sería imposible cubrir cada una de sus aspectos. Pero hay algunas piezas más pequeñas en cada motor que hacen el trabajo duro por nosotros. Uno de estos componentes es la Pila de Llamadas y, junto con la Memoria Global o *Global Memory* y el Contexto de Ejecución o *Exuction Context*, hacen posible ejecutar nuestro código. Listo para conocerlos?
 
-## Motores de JavaScript y Memoria global
+## Motores de JavaScript y Memoria Global
 
 Dije que JavaScript es a la vez un lenguaje compilado e interpretado. Lo creas o no, los motores de JavaScript en realidad compilan tu código en microsegundos antes de ejecutarlo. Eso suena mágico ¿verdad? La magia se llama JIT (compilación instantánea o *Just in time*). Es un gran tema por sí solo, otro libro no sería suficiente para describir cómo funciona JIT. Pero por ahora solo podemos saltear la teoría detrás de la compilación y enfocarnos en la fase de ejecución, lo cual es interesante.
 
@@ -22,11 +22,11 @@ function pow(num) {
 }
 ```
 
-¿Si tuviera que preguntarte cómo se procesa el código anterior en el navegador? ¿Qué dirás? Podrías decir "el navegador lee el código" o "el navegador ejecuta el código". La realidad un poco distinta. Primero, no es el navegador el que lee ese fragmento de código. Es el motor. Un motor de JavaScript lee el código y, tan pronto como encuentra la primera línea, coloca un par de referencias en la Memoria global.
+¿Si tuviera que preguntarte cómo se procesa el código anterior en el navegador? ¿Qué dirás? Podrías decir "el navegador lee el código" o "el navegador ejecuta el código". La realidad un poco distinta. Primero, no es el navegador el que lee ese fragmento de código. Es el motor. Un motor de JavaScript lee el código y, tan pronto como encuentra la primera línea, coloca un par de referencias en la Memoria Global.
 
-La Memoria global (también llamada Montículo o *Heap*) es un área donde el motor de JavaScript guarda variables y declaraciones de funciones. Preste atención, la diferencia puede sonar trivial, pero las declaraciones de funciones en JavaScript no son lo mismo que las invocaciones de funciones. Una declaración de función es solo una descripción de lo que la función debe aceptar y cómo se va a invocar. Por otra parte, una invocación de una función es la ejecución real de una función previamente declarada.
+La Memoria Global (también llamada Montículo o *Heap*) es un área donde el motor de JavaScript guarda variables y declaraciones de funciones. Preste atención, la diferencia puede sonar trivial, pero las declaraciones de funciones en JavaScript no son lo mismo que las invocaciones de funciones. Una declaración de función es solo una descripción de lo que la función debe aceptar y cómo se va a invocar. Por otra parte, una invocación de una función es la ejecución real de una función previamente declarada.
 
-
+Volviendo a nuestro ejemplo, cuando el motor lee el código anterior, la Memoria Global se llena con dos enlaces:
 So, back to our example, when the engine reads the above code the Global Memory is populated with two bindings:
 
 ![Global Memory in a JavaScript engine](images/global-memory.png)
@@ -459,7 +459,7 @@ Since ES6, JavaScript engines also implement a Microtask Queue. The Microtask Qu
 
 For simplifying asynchronous code flow ECMAScript 2015 brought us Promises. A Promise is an asynchronous object and is used to represent either the failure or the success of any asynchronous operation. But the improvements did not stop there. In 2017 `async/await` was born: it's a stylistic make up for Promises that makes possible to write asynchronous code as if it was synchronous. And more important makes possible to use `try/catch` for handling errors in asynchronous code.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYyOTY4MTA2MCw3OTU1MzU0MywtNTQ4OD
-Y3NzA1LC01OTU5NTAyOTEsOTY3NTg2OTIyLDE4MDg2Mzk5NzQs
-MTIwOTUxMjldfQ==
+eyJoaXN0b3J5IjpbNzUyNjc2MzMyLDc5NTUzNTQzLC01NDg4Nj
+c3MDUsLTU5NTk1MDI5MSw5Njc1ODY5MjIsMTgwODYzOTk3NCwx
+MjA5NTEyOV19
 -->
